@@ -1,5 +1,5 @@
 # projectCountry
-Using React and Node.js
+Using React and Express
 
 First Stage:
 Create a component or a components group that bring a form with:
