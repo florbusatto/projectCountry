@@ -1,0 +1,66 @@
+* {	
+	box-sizing: border-box;
+	margin:0 auto;
+	padding:0;	
+}
+
+body {
+	background-image: url("./intive.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 720px;
+    display: flex;
+    background-color: #3f08a0;
+}
+ 
+img {
+    width: 180px;
+    height: 60px;	
+    margin: 0 auto;	
+}
+
+form {
+    padding: 2px;	
+    margin: 0 auto;	
+    margin-top: 20px;
+    border: outset 1px ;
+    border-radius: 4px;		
+    width: 130%;	
+    height: 420px;
+    background-color: #e5e3e3;
+}
+
+label {	
+	text-align: left;
+	padding: 0 auto;	
+	margin-left: 5px;		
+	font-weight: bold;
+	color: lightblue;
+}
+
+input , select {			
+	padding: 2px;
+	margin: 5px;	
+	color: lightblue;
+	width: 40%;	
+	height: 20px;
+	border: solid 1px #007bcd;
+}		
+
+button {			
+	padding: 2px;
+	margin: 10px;
+	border-radius: 4px;
+	width: 15%;	
+	height: 30px;
+	color: #007bcd;
+	float: left;	
+}		
+
+/*---------------------MediaQueries---------------------*/
+
+@media screen and (min-width:240px) and (max-width:800px) {
+    .form {width: 20%; margin:3px; padding:2px;}
+    .img{width: 30px; height:30px;}
+    .searchButton{width: 5%;}
+}
