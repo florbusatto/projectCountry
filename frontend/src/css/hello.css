@@ -1,0 +1,16 @@
+* {	
+	box-sizing: border-box;
+	margin:0 auto;
+}
+
+div.Hello p {
+    margin: 0 auto;
+    margin: 5px;
+    float: left;
+    position: relative;
+    border: outset 1px; 
+    width: 90%; 
+    height: 50px;
+    display: block;
+    background-color: #e5e3e3;
+}

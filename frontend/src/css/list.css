@@ -1,0 +1,35 @@
+* {	
+	box-sizing: border-box;
+	margin:0 auto;
+	padding:0;	
+}
+
+body {
+    width: 90%;
+    height: 320px;
+    display: flex;
+}
+
+.mainList table {
+    border: solid 2px #007bcd; 
+    display:block;
+    height:250px;
+	width: 90%;
+    font-size: small;
+    margin-right: 15px;
+	margin-top: 10px;	
+	text-align: center;
+}
+
+.mainList tr,th {
+    padding: 8px;
+    text-align: center;  
+    letter-spacing: 1px;  
+}
+
+.mainList th {
+    padding: 8px;		
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+}
+    

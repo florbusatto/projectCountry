@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import '../Form.css';
+import '../css/Form.css';
 import {List} from './List'
 import {Hello} from './Hello'
 
@@ -63,7 +63,7 @@ onSubmit =(e) => {
         
 
 ////////Limpieza de localStorage////////
-      //localStorage.clear();
+localStorage.clear();
 //*************************************//
 
 };
@@ -77,30 +77,36 @@ onClear=(e)=>{
 }
 
 render() {
-
    return (
-    <div>
-        <form>
-         <table>
-         <tr>
-          <th><label>Name:</label></th>
+    <div className="main">
+     <form>
+       <table>
+        <tr>
+         <td>
+          <label>Name:</label>
           <input placeholder="name here" value={this.state.Name} onChange={e =>this.setState({ Name: e.target.value})}/>
-         </tr>
-         <tr>
-          <th><label>Surname:</label></th>
+         </td>
+        </tr>
+        <tr>
+         <td>
+          <label>Surname:</label>
           <input placeholder= "name here" value={this.state.Surname} onChange={e =>this.setState({ Surname: e.target.value})}/>
-         </tr>
-         <tr>
-          <th><label>Countries:</label></th>
+         </td>
+        </tr>
+        <tr> 
+         <td>
+          <label>Countries:</label>
           <select value={this.state.Country} onChange={e =>this.setState({ Country: e.target.value})}>
-            <option value=''>Choose an option</option>
-            {this.state.countriesSelect.map(country=><option value={country}>{country}</option>)}
+           <option value=''>Choose an option</option>
+           {this.state.countriesSelect.map(country=><option value={country}>{country}</option>)}
           </select>
-         </tr>
-         <tr>
-          <th><label>Birthday</label></th>
+         </td>
+        </tr>
+        <tr>
+          <td><label>Birthday:</label>
           <input type="date" name="fecha" value={this.state.Birthday} onChange={e =>this.setState({ Birthday: e.target.value})}/>
-         </tr>
+        </td>
+        </tr>
          <button onClick={(e) => this.onSubmit(e)}>Save</button>
          <button onClick={(e) => this.onClear(e)}>New Registration</button>
          <p>{this.state.sent?<Hello name={this.state.Name} from country={this.state.Country} surname={this.state.Surname} birthday={this.state.Birthday}/>:''} </p>
