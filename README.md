@@ -15,7 +15,7 @@ Step by step:
 
 3)Also, shows a list with all the previous visitors entries.
 
-4)For countries, I used the following API:https://restcountries.eu/rest/v2/all
+4)For countries, I used the following API: https://restcountries.eu/rest/v2/all
 
 For the project I used and worked with:
 
