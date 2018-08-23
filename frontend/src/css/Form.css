@@ -4,79 +4,92 @@
 }
 
 body {
-    height: 1080px;
-    margin:0 auto;
-    width: 100%;
     background-image: url("../img/intive.png");
     background-size: 100%;
     background-repeat: no-repeat;
-    height: 1080px;
     background-color: #3f08a0;
+    height: 1050px;
+    margin:0 auto;
+    width: 100%;
 }
 
-div.main {
-    margin: 0 auto;
-    margin-top: 35px;
+.main {
+    background-color: #e5e3e3;
     border: outset 1px; 
-    width: 90%; 
-    height: 480px;
     display: flex;
+    align-content: center;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: center;
-    align-content: center;
-    background-color: #e5e3e3;
-}
-
-h1 {
-    margin: 0 auto;
-    margin-top: 5px;
-    display: block;
-    font-size: medium;
-    color: #007bcd;
+    height: 480px;
+    margin:0 auto;
+    margin-top: 20px;
+    width: 110%;
 }
 
 form {	
-    margin:0 auto;
-    margin-top: 25px;    
-    display:flex;
-    height:250px;
-    width: 100%;
-    float: left;
+     margin:0 auto;
+     margin-top: 25px;   
+     height:450px;
+     width: 40%;
 }
 
 label {  	
-    display: inline-block;	
-	margin-left: 1px;		
-	font-weight: bold;
-    width: 80px;
-	color: #007bcd;
+    color: #007bcd;
+    display: inline-block;
+    font-size: medium;	
+    font-weight: bold;
+    text-align: left;
+    height: 20px;
+	margin:15px;		
+	width: 60px;
 }
 
 ::-webkit-input-placeholder { color: #007bcd; } 
 
-input , select {			
-	padding: 2px;
-	margin: 5px;	
-	color: #007bcd;
-	width: 50%;	
-	height: 30px;
-	border: solid 1px #007bcd;
+input , select {
+    border: solid 1px #007bcd;
+    color: #007bcd;			
+	font-size: medium;
+    font-family: "verdana";
+    height: 30px;	
+    margin-top: 10px;
+    margin-left: 12px;
+    text-align: left;
+	width: 60%;	
 }		
 
 button {			
-	padding: 3px;
-	margin: 10px;
-    margin-right: 60px;
-	border-radius: 4px;
-	display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
+    display: flex;
     align-content: center;
-	width: 25%;	
-	height: 40px;
-	color: #007bcd;
-	float: right;	
-	border-color: #007bcd;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 35px;
+    color: #007bcd;
+    border-color: #007bcd;
+    float: left;
+    font-size: small;
+    margin:12px;
+    margin-top: 30px;
+	width: 37%;	
 }		
+
+footer {            
+    position: absolute;
+    bottom: 345px;
+    right: 400px;
+    font-size: medium;
+}   
+
+h2 {            
+    display: flex;
+    align-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+    height: 35px;
+    color: #007bcd;
+    font-size: medium;
+}       

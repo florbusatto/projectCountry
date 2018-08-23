@@ -3,14 +3,29 @@
 	margin:0 auto;
 }
 
-div.Hello p {
+body {
+    width: 50%;
+    height: 380px;
     margin: 0 auto;
-    margin: 5px;
-    float: left;
-    position: relative;
+}
+
+.Hello {
+    margin: 0 auto;
+    margin-left: 15px;
     border: outset 1px; 
-    width: 90%; 
-    height: 50px;
-    display: block;
-    background-color: #e5e3e3;
+    width: 20%; 
+    height: 55px;
+    background-color: #dbeac9;
+    position: absolute;
+    bottom: 400px;
+    right: 980px;
+
+}
+
+p {
+    font-size: small;
+    font-family: "verdana";
+    text-align: left;
+    margin: 5px;
+    padding: 2px;
 }
