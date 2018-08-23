@@ -21,9 +21,9 @@ body {
     border: solid 2px #007bcd; 
     display:block;
     height:400px;
-	width: 100%;
+    width: 100%;
     font-size: medium;
-	margin-top: 35px;	
+    margin-top: 35px;	
 }
 
 .mainList th {
